@@ -52,9 +52,11 @@ int main(void) {
 void input(){
   //create file pointer, open file for 'a' appending
   FILE *fptr;
+  int id, age;
+  char lastName[20];
+  char firstName[20];
   struct personNode person;
   fptr = fopen("person.csv" , "a");
-  fprintf(fptr,"lastName, firstName, age, id");
   //error handling
   if(fptr == NULL){
     printf("ERROR: file cannot be found\n");
