@@ -63,19 +63,19 @@ void input(){
   else{
     for(int i =0; i<1;i++){
       printf("Enter a last name: ");
-      scanf("%13s",lastName);
+      scanf("%s",lastName);
 
       printf("Enter a first name: ");
-      scanf("%13s",firstName);
+      scanf("%s",firstName);
 
       printf("Enter an age: ");
-      scanf("%8d",&age);
+      scanf("%d",&age);
 
       printf("Enter their ID: ");
       scanf("%d", &id);
 
       //fwrite display lastname, firstname, then pointer to age to display contents
-      fprintf(fptr, "%s %s %d %d\n", lastName,firstName,*person.age,person.id);
+      fprintf(fptr, "%s%s%d%d\n", lastName,firstName,age,id);
       
     }
     
